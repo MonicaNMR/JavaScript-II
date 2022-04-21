@@ -1,0 +1,226 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body onload="onLoad()">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../proyecto/imagen/dentista.png" />
+          <span class="fs-4">Dentista</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                Inicio
+              </a>
+              </li>
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tratamientos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#tratamientos">Limpieza Dental</a></li>
+                  <li><a class="dropdown-item" href="#tratamientos">Resinas</a></li>
+                  <li><a class="dropdown-item" href="#tratamientos">Sellador</a></li>
+                  <li><a class="dropdown-item" href="#tratamientos">Endodoncia</a></li>
+                  <li><a class="dropdown-item" href="#tratamientos">Extracción Simple</a></li>
+                </ul>                
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacto">
+                Contacto
+              </a>
+            </li>                                            
+          </ul>
+          <div class="navbar-signin">
+            <a href="../proyecto/paginas/solicita_cita.html" class="btn btn-danger" >Agenda tu Cita</a> 
+          </div>
+
+          <div class = "navbar-fecha">
+            <script>
+              function onload() {
+                alert("evento load detectado!");
+              }
+            //  window.onload = onLoad();        
+            </script>
+            <div id="container" class="contaier">
+              <div class="block">
+                  <div id="location"></div>                    
+                  <div id="date"></div>
+                  <div id="temperature"></div>
+                  <div id="reloj" style="font-size:15px;"></div>
+              </div>
+            </div>            
+
+          <!--  
+            <script type="text/javascript"> 
+              function makeArray() {  //esta funcion llena arreglo con los meses
+                for (i = 0; i<makeArray.arguments.length; i++)
+                this[i + 1] = makeArray.arguments[i];}
+  
+                var months = new makeArray('Enero','Febrero','Marzo','Abril','Mayo',
+                'Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
+  
+                var hoy = new Date();  // today 
+                var dia = hoy.getDate(); // dia
+                var mes = hoy.getMonth() + 1;  //mes 
+                var anio = hoy.getFullYear();  // anio
+                document.write(`Hoy es ${dia} de ${months[mes]} del ${anio}`); // es una cadena de texto que contiene el texto a ser impreso en el documento
+                //document.write(location); // es una cadena de texto que contiene el texto a ser impreso en el documento
+                document.close();
+            </script>   
+          
+            <div>    
+              <script type="text/javascript">
+                  function startTime(){  //funcion para cargar reloj
+                      today=new Date();
+                      h=today.getHours();
+                      m=today.getMinutes();
+                      s=today.getSeconds();
+                      m=checkTime(m);
+                      s=checkTime(s);
+                      document.getElementById('reloj').innerHTML=h+":"+m+":"+s;  //cambiar completamente los contenidos de un elemento por contenido nuevo, esta actualizando constantemente la hora
+                      t=setTimeout('startTime()',500);}  //funcion a ejecutar, numero de milisegundos que se tarda ejecutarla
+                  function checkTime(i)
+                      {if (i<10) {i="0" + i;}return i;}
+                      window.onload=function(){startTime();}  //se ejecuta la funcion tan pronto como se carga la pagina onload
+              </script>
+              
+              <div id="reloj" style="font-size:15px;"></div>  
+            </div>
+          -->                                
+          </div>          
+
+        </div>
+      </div>
+    </nav>
+   
+    <header>
+      <h1>Lo que nos importa es verte sonreir!</h1>
+      <p>Proporcionamos servicios dentales para toda la familia con un presupuesto accesibles, brindando un servicio de alta calidad, en un entorno profesional.  </p>
+
+      <img src="../proyecto/imagen/una-sonrisa.jpg" />
+      <div id="small-text">
+        <small>Nuestro compromiso de brindar a los pacientes atención dental de la más alta calidad comienza con los dentistas en cada una de nuestras clínicas. Nos enfocamos en incorporar talento joven, proactivo e innovador, provenientes de las escuelas de odontología más reconocidas del país.
+          La capacitación continua garantiza que ofrezcamos a nuestros pacientes los tratamientos más modernos utilizando equipos y materiales de vanguardia.        
+          Nuestros dentistas se centran únicamente en la atención al paciente</small>
+      </div>
+    </header>
+
+    <section id="nosotros">
+      <article>
+        <div class="content">
+          <img src="../proyecto/imagen/muela3.png" />
+          <p>Odontologia</p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <img src="../proyecto/imagen/instrumental.png" />
+          <p>Instrumental de Calidad</p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <img src="../proyecto/imagen/sillon_dental.jpg" />
+          <p>Equipos Confortables</p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <img src="../proyecto/imagen/muela.jpg" />
+          <p>Personal Profesional</p>
+        </div>
+      </article>                  
+    </section>
+
+    <section id="tratamientos">
+      <article>
+        <div class="content">
+          <h1>Limpieza Dental</h1>
+          <p>Eliminación de placa dental y cálculo, con cepillos rotatorios, para dejar una superficie dental limpia y encías sanas.</p>
+        </div>        
+      </article> 
+      <article>
+        <div class="content">
+          <img src="../proyecto/imagen/limpieza.jpg" />
+        </div>           
+      </article>      
+      <article>     
+        <div class="content">
+          <h1>Resinas</h1>
+          <p>Material estético (color y textura similares al diente) con el cual se restauran dientes con daños cómo, caries, fracturas, grietas o desgastes.</p>
+        </div>        
+      </article> 
+      <article>
+        <div class="content">
+          <img src="../proyecto/imagen/resinas.jpg" />
+        </div>           
+      </article>       
+      <article>
+        <div class="content">
+          <h1>Sellador</h1>
+          <p>Método para aislar de elementos nocivos (físicos o químicos) a las fosetas y fisuras del diente, utilizando resina sellante</p>
+        </div>
+      </article> 
+      <article>
+        <div class="content">
+          <img src="../proyecto/imagen/sellador.PNG" />
+        </div>           
+      </article>       
+      <article>
+        <div class="content">
+          <h1>Endodoncia</h1>
+          <p>Es la remoción química y mecánica de la pulpa dental, que es la parte interna del diente la cual incluye vasos sanguíneos y nervios, con el fin de eliminar infecciones y/o dolor.</p>
+        </div>        
+      </article>
+      <article>
+        <div class="content">
+          <img src="../proyecto/imagen/endodoncia.png" />
+        </div>           
+      </article>         
+      <article>
+        <div class="content">
+          <h1>Extracción Simple</h1>
+          <p>Procedimiento para eliminar un diente o raíz de la encía, con el fin de evitar focos infecciosos, o para evitar malas posiciones del resto de los dientes</p>
+        </div>      
+      </article>  
+      <article>
+        <div class="content">
+          <img src="../proyecto/imagen/extraccion.jpg" />
+        </div>           
+      </article>                                       
+    </section>
+    <section id="Contacto">
+      <article>
+        <div class="content">
+          <h1>Contacto</h1>
+          <p>Correo electrónico: segurodental@dentista.com</p>
+          <p> Redes sociales: Facebook.com/Dentista</p>
+          <p> Oficinas Dentistas:</p>
+          <p> Av. Insurgentes Sur 1458, P. 19 y 20,</p>
+          <p> Col. Actipan, Benito Juárez, 03230, Ciudad de México.</p>
+          <p> Lunes a viernes de 8:00 a 17:00 horas.</p>
+        </div>      
+      </article>  
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../proyecto/js/clima.js"></script>
+  </body>
+</html>
